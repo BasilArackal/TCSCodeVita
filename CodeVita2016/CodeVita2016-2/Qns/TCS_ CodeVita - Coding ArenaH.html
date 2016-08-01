@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0055)https://www.tcscodevita.com/CodevitaV5/problemstart.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		<title>TCS: CodeVita - Coding Arena </title>	
+		
+		<link rel="stylesheet" href="./TCS_ CodeVita - Coding ArenaH_files/structure.css" type="text/css">
+		<link rel="stylesheet" href="./TCS_ CodeVita - Coding ArenaH_files/style.css" type="text/css">
+		 <script async="" src="./TCS_ CodeVita - Coding ArenaH_files/analytics.js"></script><script src="./TCS_ CodeVita - Coding ArenaH_files/jquery.min.js"></script>
+		<!-- <script src="/CodevitaV5/JS/jquery1.9.js"></script> -->
+	<!-- 	<link rel="stylesheet" href="css/notification.css" type="text/css"/> -->
+		<link rel="stylesheet" href="./TCS_ CodeVita - Coding ArenaH_files/jquery-ui-1.10.3.custom.css">		
+		<script>
+			$(function() {
+			var radio_val = '7';
+			if  (radio_val =='') {
+				radio_val = 0;
+			}
+			$( "#tabs" ).tabs({ active: radio_val });
+			});
+			window.history.forward(); 
+			function noBack() {
+				window.history.forward();
+			}
+		</script>
+<script language="JavaScript">
+
+			var eventdate=new Date("December 25, 2013 23:59:59");
+			var d=new Date("December 25, 2013 23:59:59");
+			function toSt(n) {
+			 s=""
+			 if(n<10) s+="0"
+			 return s+n.toString();
+			}
+			
+			function countdown1(s,d1) {
+			var e=document.getElementById("refreshed");
+					if(e.value=="no")
+						e.value="yes";
+					else{
+						e.value="no";
+						location.reload();
+					}	
+
+			eventdate = new Date(s);
+			d=new Date(d1);
+			count=Math.floor((eventdate.getTime()-d.getTime())/1000);
+			 if(count<=0)
+			   {
+				 $('#sec').html("00");
+				 $('#min').html("00");
+				 $('#hr').html("00");
+			    return;
+			  }
+		    $('#sec').html(toSt(count%60));
+			count=Math.floor(count/60);
+			$('#min').html(toSt(count%60));
+			count=Math.floor(count/60);
+			$('#hr').html(toSt(count%24));
+			setTimeout("countdown(d)",999);
+			}
+
+			function countdown(d) {
+			 d.setSeconds(d.getSeconds() + 1);
+			 count=Math.floor((eventdate.getTime()-d.getTime())/1000);
+			 if(count<=0)
+			   {
+				 $('#sec').html("00");
+				 $('#min').html("00");
+				 $('#hr').html("00");
+			    return;
+			  }
+			 $('#sec').html(toSt(count%60));
+			 count=Math.floor(count/60);
+			 $('#min').html(toSt(count%60));
+			 count=Math.floor(count/60);
+			 $('#hr').html(toSt(count%24));
+			 setTimeout("countdown(d)",999);
+			}
+			// end hiding script-->
+</script>
+
+	</head>
+	<body onload="countdown1(&#39;July 30, 2016 6:37:2&#39;,&#39;July 30, 2016 0:40:45&#39;)">
+		<table border="0" align="center">
+			<tbody><tr>
+				<td>
+					<div>
+						<div class="links">	
+							<table class="innerlinks" border="0">
+								<tbody><tr>		
+									<td>
+										<!-- <a class="upperlinks" href="/CodevitaV5/redirectToNextStep.jsp" target="_blank" >TCS NextStep</a>&nbsp&nbsp&nbsp
+		<a class="upperlinks" href="/CodevitaV5/redirectToTCSCareers.jsp" target="_blank" >TCS Careers</a>&nbsp&nbsp&nbsp
+		<a class="upperlinks" href="/CodevitaV5/redirectToTCS.jsp" target="_blank" >www.tcs.com</a>&nbsp&nbsp&nbsp<br> -->
+		<a class="upperlinks" href="https://nextstep.tcs.com/" target="_blank">TCS NextStep</a>&nbsp;&nbsp;&nbsp;
+		<a class="upperlinks" href="http://www.careers.tcs.com/" target="_blank">TCS Careers</a>&nbsp;&nbsp;&nbsp;
+		<a class="upperlinks" href="http://www.tcs.com/Pages/default.aspx" target="_blank">www.tcs.com</a>&nbsp;&nbsp;&nbsp;<br>
+									</td>
+									<td style="text-align:right"><a style="font-family:Verdana;font-size:11px;font-weight:bold;color:black;" href="https://www.tcscodevita.com/CodevitaV5/logout.jsp">Logout</a></td>
+								</tr>
+							</tbody></table>
+						</div>
+						<div class="tcsclip">
+							<img border="0" src="./TCS_ CodeVita - Coding ArenaH_files/header.jpg" width="978px" height="115px">
+						</div> <div class="tags">
+
+		<table class="all" border="0" width="100%">
+			<tbody><tr>
+				<td class="first">
+				<table class="welcome" border="0">
+					<tbody><tr>
+					<td width="23px"></td>
+					<td width="75%" align="left"><a class="navigationlink">Welcome JESLIN JOSEPH</a></td>
+					<td width="20%" align="right"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp">Home</a></td>
+					</tr>
+				</tbody></table>
+				</td>
+				<td class="third" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/StartCoding" style="color:#FCDD41;font-weight:bold;">Coding Arena</a></td>
+				<td class="third" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/ChkExecuteServlet">My Compile &amp; Run </a></td>
+				<td class="third" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/ChkSubmissionServlet">My Submissions</a></td>
+				<td class="fifth" align="center"><a class="navigationlink" href="javascript:launchReport();">Graphs</a></td>
+				<td class="fifth" align="center"></td>
+					 <td class="fifth" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/feedback.jsp">Feedback</a></td> 
+			</tr>
+		</tbody></table>
+
+	</div> 
+						<table class="main" border="0">
+							<tbody><tr>
+								<td width="23px"></td>
+							
+							
+								<td valign="top">
+								<!-- 	<div class="leftupper" >	 -->					
+										<table border="0" style="border-collapse:collapse;">
+											<tbody><tr>
+												<td height="10px"></td>
+											</tr>
+											<tr>
+												<td width="200px"><a class="title"><b>Coding Arena </b></a></td>
+												<td width="390px"></td>
+												<td align="left"><img border="0" src="./TCS_ CodeVita - Coding ArenaH_files/Codevita-logo-small.jpg" width="172px" height="45px"></td>
+												<td>
+												<table width="100%" height="10%" border="0" style="border-collapse:collapse;">
+											
+												<tbody><tr>
+												<td height="22px" style="background-color:gray ">
+														<a class="timenotif"><b>Time Left</b></a>
+												</td>
+											</tr>
+											<tr>
+												<td height="60px" width="172px" style="background-color:#EFEFEF;">
+														<table border="0" cellspacing="0" width="172px">
+														<tbody><tr>
+															<td width="20px"></td>
+															<td width="10%" style="background-color:white;"><a style="font-size:24px;color:#950000;font-weight:bold;" id="hr">05</a></td>
+															<td width="20px"></td>
+															<td width="10%" style="background-color:white;"><a style="font-size:24px;color:#950000;font-weight:bold;" id="min">55</a></td>
+															<td width="20px"></td>
+															<td width="10%" style="background-color:white;"><a style="font-size:24px;color:#950000;font-weight:bold;" id="sec">59</a></td>	
+															<td width="20px"></td>
+														</tr>
+														<tr>
+															<td width="20px"></td>
+															<td align="center"> hr </td>
+															<td width="20px"></td>
+															<td align="center"> min </td>
+															<td width="20px"></td>
+															<td align="center"> sec </td>
+															<td width="20px"></td>
+														</tr>
+													</tbody></table>					
+												</td>																								
+											</tr>
+											
+											</tbody></table>
+												</td>
+											
+											</tr>
+											<tr>
+												<td height="10px"></td>
+											</tr>
+										</tbody></table>
+																		
+											
+<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+	<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">A</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">B</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-3" aria-labelledby="ui-id-3" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">C</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-4" aria-labelledby="ui-id-4" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-4" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">D</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-5" aria-labelledby="ui-id-5" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-5" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">E</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-6" aria-labelledby="ui-id-6" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-6" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-6">F</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-7" aria-labelledby="ui-id-7" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-7" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7">G</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-8" aria-labelledby="ui-id-8" aria-selected="true"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-8" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-8">H</a></li>
+
+	</ul>
+	
+	<div id="tabs-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+				<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+				normal"><span class="problem">Problem : Chakravyuha<o:p></o:p></span></b></p>
+				
+				<p class="MsoNormal"><span style="font-family:Verdana"><o:p> </o:p></span></p>
+				
+				
+				
+				<p class="MsoNormal"><o:p> </o:p></p>
+				
+				<p class="MsoNormal"><span style="font-family:Verdana">During the battle of Mahabharat, when Arjuna was far away in the battlefield, Guru Drona made a Chakravyuha formation of the Kaurava army to capture Yudhisthir Maharaj. Abhimanyu, young son of Arjuna was the only one amongst the remaining Pandava army who knew how to crack the Chakravyuha. He took it upon himself to take the battle to the enemies.
+				<br><br>
+				
+				<o:p></o:p></span></p>
+			</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="A"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-1"><input type="image" src="./TCS_ CodeVita - Coding ArenaH_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top" height="10%">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+
+
+
+
+	</div>
+
+	
+	
+	<div id="tabs-2" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+
+					<div class="border">
+						<div class="Section1">
+							<p class="MsoNormal" align="center" style="text-align: left">
+								<b style="mso-bidi-font-weight: normal"><span class="problem">Problem : The Vita Sum<o:p></o:p></span></b>
+							</p>
+
+							<p class="MsoNormal">
+								<span style="font-family: Verdana"><o:p>
+									</o:p></span>
+							</p>
+
+
+
+							<p class="MsoNormal">
+								<o:p>
+								</o:p>
+							</p>
+
+							<p class="MsoNormal">
+								<span style="font-family: Verdana">Tom the cat is brushing up his Math skills. He has a bag containing N balls of different colors. Now Tom can randomly pick any even number of balls from the bag.  Tom wants to find out the sum of all such combinations of balls that he can pull out from the bag. Given he can pull out at max K balls in one pick.
+								<br><o:p></o:p>
+								</span>
+							</p>
+						</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="B"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-2"><input type="image" src="./TCS_ CodeVita - Coding ArenaH_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-3" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+							<p class="MsoNormal" align="center" style="text-align: left">
+								<b style="mso-bidi-font-weight: normal"><span class="problem">Problem : Ram and Chocolates<o:p></o:p></span></b>
+							</p>
+
+							<p class="MsoNormal">
+								<span style="font-family: Verdana"><o:p>
+									</o:p></span>
+							</p>
+
+
+
+							<p class="MsoNormal">
+								<o:p>
+								</o:p>
+							</p>
+
+							<p class="MsoNormal">
+								<span style="font-family: Verdana">Ram is a school boy. He has n good friends numbered from 1 to n. Let this be denoted by an Array A. The friend with higher array index is closer to Ram. It's his birthday today and hence he wants to distribute his birthday chocolates in a way such that A[i+1]=A[i]+3. Now he had n boxes numbered from 1 to n for each of his friend and his mother had filled them with some random number of chocolates, However Ram has made up his mind to distribute the  the chocolates in the way described above. He wants to know if it is possible to re-arrange the chocolates in the boxes to have a distribution pattern he likes. <o:p></o:p>
+								</span>
+							</p>
+						</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="C"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-3"><input type="image" src="./TCS_ CodeVita - Coding ArenaH_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-4" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+					<div class="Section1">
+					<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+					normal"><span class="problem">Problem : Pawn Moves <o:p></o:p></span></b></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana"><o:p> </o:p></span></p>
+					
+					
+					
+					<p class="MsoNormal"><o:p> </o:p></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana">
+					<b>Background</b><br><br>
+					A Chess board position is accurately captured by Forsyth-Edwards notation and is abbreviated as FEN. A FEN "record" defines a particular game position, all in one text line and using only the ASCII character set. A FEN record contains six fields. A complete description of the FEN format to represent Chess positions can be found at <a href="https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation" target="_blank" style="color:#0000ff; background-color:transparent; text-decoration:none">here</a> <o:p></o:p></span></p>
+				</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="D"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-4"><input type="image" src="./TCS_ CodeVita - Coding ArenaH_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+
+	</div>
+	
+	
+	<div id="tabs-5" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+					<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+					normal"><span class="problem">Problem : Verify JSON Object validity<o:p></o:p></span></b></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana"><o:p> </o:p></span></p>
+					
+					
+					
+					<p class="MsoNormal"><o:p> </o:p></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana">
+					A JSON object is a key-value pair data structure that is enclosed within { }. A sample JSON object would look like<br>
+{<br>
+"key1":"value1",<br>
+"key2":"value2",<br>
+<o:p></o:p></span></p>
+				</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="E"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-5"><input type="image" src="./TCS_ CodeVita - Coding ArenaH_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+
+	</div>
+	
+	
+	<div id="tabs-6" aria-labelledby="ui-id-6" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+							<p class="MsoNormal" align="center" style="text-align: left">
+								<b style="mso-bidi-font-weight: normal"><span class="problem">Problem : Last Digit<o:p></o:p></span></b>
+							</p>
+
+							<p class="MsoNormal">
+								<span style="font-family: Verdana"><o:p>
+									</o:p></span>
+							</p>
+
+
+
+							<p class="MsoNormal">
+								<o:p>
+								</o:p>
+							</p>
+
+							<p class="MsoNormal">
+								<span style="font-family: Verdana">
+								<br>
+								<b>Statement :</b>
+								<br><br>
+								Compute the last digit of the following sequence<o:p></o:p>
+								</span>
+							</p>
+						</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="F"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-6"><input type="image" src="./TCS_ CodeVita - Coding ArenaH_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+
+	</div>
+	
+	
+	<div id="tabs-7" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+					<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+					normal"><span class="problem">Problem : Checking Moves <o:p></o:p></span></b></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana"><o:p> </o:p></span></p>
+					
+					
+					
+					<p class="MsoNormal"><o:p> </o:p></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana">
+					<b>Background</b>
+					<br><br>
+					A Chess board position is accurately captured by Forsyth-Edwards notation and is abbreviated as FEN. A FEN "record" defines a particular game position, all in one line of text and using only the ASCII character set. A FEN record consists of six fields. A complete description of the FEN format to represent Chess positions can be found <a href="https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation" target="_blank" style="color:#0000ff; background-color:transparent; text-decoration:none">here</a> <o:p></o:p></span></p>
+				</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="G"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-7"><input type="image" src="./TCS_ CodeVita - Coding ArenaH_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-8" aria-labelledby="ui-id-8" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+							<p class="MsoNormal" align="center" style="text-align: left">
+								<b style="mso-bidi-font-weight: normal"><span class="problem">Problem : RLE String<o:p></o:p></span></b>
+							</p>
+
+							<p class="western" align="JUSTIFY" style="line-height: 140%; margin-bottom: 0in;">
+								Given a Run Length Encoded ASCII (Base 64) String as input, write a program to decode the string and print the corresponding image. Number of characters in each row of the resulting image is always 57.
+								<br><br>
+								This question can be understood once we understand how RLE maps to an image. Have a look at the Example section to get this understanding.
+							<br> <br>
+							</p>
+							<p style="line-height: 140%;">
+								<b>Input Format:</b> 
+								<br><br>RLE ASCII String
+								<br><br>
+							</p>
+							<p style="line-height: 140%;">
+								<b>Output Format:</b> <br> <br>
+								Ascii data resembling an image corresponding to input RLE String
+								<br> <br>
+							</p>
+							
+							<p style="line-height: 140%;">
+								<b>Example:</b> <br> <br>
+								The following string is a RLE string
+								<br> <br>
+								<b>DJJGKHG HBMBEBIBFBF HBMBQDK HBMBTDH HBMBEBIBFBF HBNGKHG</b>
+								<br><br>
+								It gets converted into the image below. You should see 'TCS' emerge by embossing the '!' character on '0' character
+								<br><br>
+								</p><div style="text-align:center"> <img src="./TCS_ CodeVita - Coding ArenaH_files/rle1.png" height="200px" width="400px"><br><b>Fig. 1. Ascii Image corresponding to RLE string shown above</b></div>
+								<br><br>
+								Note: - Each row comprising only of '!' and '0' has a length of exactly 57 characters
+<br>Now let's understand the steps to convert the RLE into the image
+
+								<ol>
+								<li>Split the RLE string on space character. For each substring achieved after splitting do step 2</li>
+								<li><b>Lets perform the required calculation on first row of ascii image</b>:- which is <b>DJJGKHG</b>
+								<ol>
+								<li>Where, highlighted value is calculated as (Ascii value of(D)-64)ïƒ¨ (68-64)=<font color="orange">4</font></li>
+								<li>(Ascii value of(J)-64)-&gt;(74-64)=<font color="Cyan">10</font></li>
+								<li>(Ascii value of(J)-64)-&gt; (74-64)=<font color="Cyan">10</font></li>
+								<li>(Ascii value of(G)-64)-&gt; (71-64)=<font color="red">7</font></li>
+								<li>(Ascii value of(K)-64)-&gt; (75-64)=<font color="rgb(255,215,0)">11</font></li>
+								<li>(Ascii value of(H)-64)-&gt; (72-64)=<font color="green">8</font></li>
+								<li>(Ascii value of(G)-64)-&gt; (71-64)=<font color="red">7</font></li>
+								</ol>
+								</li>
+								<li>Addition of all numerical values for each character in every sub-string as computed in step 2 should equal 57</li>
+								<li>Corresponding to each alphabet in the sub-string, say D, a number, 4 in this case, is achieved by operation denoted in step 2</li>
+								<li>Print '0' 4 times (let's call this operation multiply) which will produce a string '0000'</li>
+								<li>Take the next character, J in this case and number 10 achieved by performing operation denoted in step 2</li>
+								<li>Toggle '0' to '!' and print it 10 times which will produce a string '!!!!!!!!!!'</li>
+								<li>Similarly, for each even index in sub-string multiply '0' with corresponding number and for each odd index in sub-string multiply '!' with corresponding number. Sub-string starts with index 0.</li>
+								<li>After processing each sub-string you will get the corresponding row in the ascii image</li>
+								<li>When all sub-strings are processed you will get all rows which will form the ascii image. Print that as output.</li>
+								</ol>
+								
+							<p></p>
+
+							
+							<p></p>
+
+							<a><b>Sample Input and Output</b></a><a><br> <br>
+							<b>Input1:</b>		
+								<br>
+							DJJGKHG HBMBEBIBFBF HBMBQDK HBMBTDH HBMBEBIBFBF HBNGKHG
+							<br><br>
+							<b>Output1:</b><br><br>
+							
+								<img src="./TCS_ CodeVita - Coding ArenaH_files/rle1.png" height="200px" width="400px">
+							<br> <br>
+							<b>Input2:</b>		
+								<br>
+							YFZ YFZ YFZ YFZ JdK JdK JdK YFZ YFZ YFZ YFZ YFZ
+							<br><br>
+							<b>Output1:</b><br><br>
+								<img src="./TCS_ CodeVita - Coding ArenaH_files/rle2.png" height="200px" width="400px">
+							<br> <br>
+									
+						</a></div><a>
+						<div class="note">
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i> Please do not use package and namespace in your code.
+									For object oriented languages your code should be written in
+									one class.</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>Participants submitting solutions in C language should
+									not use functions from &lt;conio.h&gt; / &lt;process.h&gt; as
+									these files do not exist in gcc</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>For C and C++, return type of main() function should be
+									int.</i>
+							</p>
+							<br> <br> <font color="blue"><b>© 2016
+									Tata Consultancy Services Limited. All Rights Reserved. </b></font>
+							<p class="western" align="JUSTIFY" style="margin-bottom: 0in">
+								<br>
+							</p>
+						</div>
+					</a></div><a> <br> <br> </a><a style="color: #950000; font-weight: bold;">Submit
+						Answer</a>
+					<div class="submitsolution">
+						<input type="checkbox" name="confirm">I , <b>JESLIN JOSEPH</b>
+						confirm that the answer submitted is my own.<br> <br>
+						<div class="fileinputs">
+							<input type="file" class="file_hidden" name="txtUNameMem1" id="Program_H" size="25" onchange="select_file(this.id,this,&#39;STARTED&#39;)">
+							<div class="fakefile">
+								<input size="30" name="fake_file_input"> <input type="button" value="Browse..." name="Browse">
+							</div>
+						</div>
+						<div class="filesubmit">
+							<!--<input type="Submit" value="Submit" name="Submit" id="upload" style="position:absolute;left:10px;">-->
+							<input type="image" value="Submit" name="Submit" id="upload" src="./TCS_ CodeVita - Coding ArenaH_files/Submit-bttn.jpg" height="20px">
+							<span></span>
+						</div>
+					</div>
+				</td>
+				<td valign="top"><div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: #D3D3D3; height: 22px; width: 172px"><a href="javascript:checkStatus();" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div></td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+</div>
+
+								
+										
+								
+								</td>
+								<td width="23px">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="height: 90px;"></div>
+								</td>
+								<td>
+								
+								<img style=" margin-top:-70px;margin-right:23px;" align="right" border="0" src="./TCS_ CodeVita - Coding ArenaH_files/Mascot-Small.jpg">
+								</td>
+							</tr>								
+						</tbody></table>
+						<div class="lower">
+							<table border="0" style="position:relative;border-collapse:collapse;" align="center" width="932px">
+								<tbody><tr>
+									<td height="20px"></td>
+								</tr>
+								<tr>
+									<td><a class="footer">© 2016 Tata Consultancy Services Limited. All Rights Reserved.&nbsp;&nbsp;&nbsp;</a></td>
+									<td><a class="footer">In Association with</a></td>
+									<td><img border="0" src="./TCS_ CodeVita - Coding ArenaH_files/Campus-Commune-Logo.jpg"></td>
+									<!-- <td ><a class="footer">|</a><a class="footer">&nbsp;Privacy Policy &nbsp;&nbsp;</a></td> -->
+									<td><a class="footer">|</a><a href="https://www.tcscodevita.com/CodevitaV5/privacypolicy.jsp" target="_blank style=" text-decoration:none;="" color:white;"="">&nbsp;Privacy Policy &nbsp;&nbsp;</a></td>
+									<td>
+										<!-- <a href="/CodevitaV5/redirectToTwitter.jsp" target="_blank"><img border="0" src="/CodevitaV5/images/twitter-icn.jpg"></a>
+				<a href="/CodevitaV5/redirectToLinkedIN.jsp" target="_blank"><img border="0" src="/CodevitaV5/images/linked-in-icn.jpg"></a>
+				<a href="/CodevitaV5/redirectToFacebook.jsp" target="_blank"><img border="0" src="/CodevitaV5/images/Facebook-icn.jpg"></a> -->
+				<a href="https://twitter.com/TCS_News" target="_blank"><img border="0" src="./TCS_ CodeVita - Coding ArenaH_files/twitter-icn.jpg"></a>
+				<a href="http://www.linkedin.com/company/tata-consultancy-services/careers?trk=top_nav_careers" target="_blank"><img border="0" src="./TCS_ CodeVita - Coding ArenaH_files/linked-in-icn.jpg"></a>
+				<a href="http://www.facebook.com/TataConsultancyServices" target="_blank"><img border="0" src="./TCS_ CodeVita - Coding ArenaH_files/Facebook-icn.jpg"></a>
+									</td>
+									<td align="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" src="./TCS_ CodeVita - Coding ArenaH_files/TATA-logo.jpg"></td>
+								</tr>
+							</tbody></table>
+						</div> 
+						<!-- <img style=" margin-top:-230px;margin-right:23px;" align="right" border="0" src="/CodevitaV5/images/Mascot-Small.jpg" > -->
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+		<!--
+		Notification Popup
+		-->
+		<div id="notification_popup_box" class="ui-dialog-content ui-widget-content" style="vertical-align: middle;display:none;">
+			<div style="text-align:right;">
+				<span id="close_icon" onclick="closeNotification()" style="margin-top:-15px;position: absolute;right: 0px;">&nbsp;&nbsp;&nbsp;</span>
+			</div>
+			<div id="notification_popup_text"></div>
+		</div>
+		<input type="hidden" name="selected_problem" value="H">
+		<input type="hidden" id="refreshed" value="yes">
+	
+	<script src="./TCS_ CodeVita - Coding ArenaH_files/gen_validatorv4.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaH_files/ajaxfileupload.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaH_files/jquery-ui.min.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaH_files/reportstartjs.js"></script>
+<!-- <script src="/CodevitaV5/JS/jquery1.10.js"></script> -->
+<script src="./TCS_ CodeVita - Coding ArenaH_files/problemstartjs.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaH_files/google_analytics.js"> </script>
+
+
+</body></html>

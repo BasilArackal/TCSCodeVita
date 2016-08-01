@@ -1,0 +1,2 @@
+N=input()
+K=input()
