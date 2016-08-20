@@ -1,0 +1,1568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0055)https://www.tcscodevita.com/CodevitaV5/problemstart.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		
+		<title>TCS: CodeVita - Coding Arena </title>	
+		
+		<link rel="stylesheet" href="./TCS_ CodeVita - Coding ArenaF_files/structure.css" type="text/css">
+		<link rel="stylesheet" href="./TCS_ CodeVita - Coding ArenaF_files/style.css" type="text/css">
+		 <script async="" src="./TCS_ CodeVita - Coding ArenaF_files/analytics.js"></script><script src="./TCS_ CodeVita - Coding ArenaF_files/jquery.min.js"></script>
+		<!-- <script src="/CodevitaV5/JS/jquery1.9.js"></script> -->
+	<!-- 	<link rel="stylesheet" href="css/notification.css" type="text/css"/> -->
+		<link rel="stylesheet" href="./TCS_ CodeVita - Coding ArenaF_files/jquery-ui-1.10.3.custom.css">		
+		<script>
+			$(function() {
+			var radio_val = '5';
+			if  (radio_val =='') {
+				radio_val = 0;
+			}
+			$( "#tabs" ).tabs({ active: radio_val });
+			});
+			window.history.forward(); 
+			function noBack() {
+				window.history.forward();
+			}
+		</script>
+<script language="JavaScript">
+
+			var eventdate=new Date("December 25, 2013 23:59:59");
+			var d=new Date("December 25, 2013 23:59:59");
+			function toSt(n) {
+			 s=""
+			 if(n<10) s+="0"
+			 return s+n.toString();
+			}
+			
+			function countdown1(s,d1) {
+			var e=document.getElementById("refreshed");
+					if(e.value=="no")
+						e.value="yes";
+					else{
+						e.value="no";
+						location.reload();
+					}	
+
+			eventdate = new Date(s);
+			d=new Date(d1);
+			count=Math.floor((eventdate.getTime()-d.getTime())/1000);
+			 if(count<=0)
+			   {
+				 $('#sec').html("00");
+				 $('#min').html("00");
+				 $('#hr').html("00");
+			    return;
+			  }
+		    $('#sec').html(toSt(count%60));
+			count=Math.floor(count/60);
+			$('#min').html(toSt(count%60));
+			count=Math.floor(count/60);
+			$('#hr').html(toSt(count%24));
+			setTimeout("countdown(d)",999);
+			}
+
+			function countdown(d) {
+			 d.setSeconds(d.getSeconds() + 1);
+			 count=Math.floor((eventdate.getTime()-d.getTime())/1000);
+			 if(count<=0)
+			   {
+				 $('#sec').html("00");
+				 $('#min').html("00");
+				 $('#hr').html("00");
+			    return;
+			  }
+			 $('#sec').html(toSt(count%60));
+			 count=Math.floor(count/60);
+			 $('#min').html(toSt(count%60));
+			 count=Math.floor(count/60);
+			 $('#hr').html(toSt(count%24));
+			 setTimeout("countdown(d)",999);
+			}
+			// end hiding script-->
+</script>
+
+	</head>
+	<body onload="countdown1(&#39;August 20, 2016 2:53:48&#39;,&#39;August 19, 2016 20:57:16&#39;)">
+		<table border="0" align="center">
+			<tbody><tr>
+				<td>
+					<div>
+						<div class="links">	
+							<table class="innerlinks" border="0">
+								<tbody><tr>		
+									<td>
+										<!-- <a class="upperlinks" href="/CodevitaV5/redirectToNextStep.jsp" target="_blank" >TCS NextStep</a>&nbsp&nbsp&nbsp
+		<a class="upperlinks" href="/CodevitaV5/redirectToTCSCareers.jsp" target="_blank" >TCS Careers</a>&nbsp&nbsp&nbsp
+		<a class="upperlinks" href="/CodevitaV5/redirectToTCS.jsp" target="_blank" >www.tcs.com</a>&nbsp&nbsp&nbsp<br> -->
+		<a class="upperlinks" href="https://nextstep.tcs.com/" target="_blank">TCS NextStep</a>&nbsp;&nbsp;&nbsp;
+		<a class="upperlinks" href="http://www.careers.tcs.com/" target="_blank">TCS Careers</a>&nbsp;&nbsp;&nbsp;
+		<a class="upperlinks" href="http://www.tcs.com/Pages/default.aspx" target="_blank">www.tcs.com</a>&nbsp;&nbsp;&nbsp;<br>
+									</td>
+									<td style="text-align:right"><a style="font-family:Verdana;font-size:11px;font-weight:bold;color:black;" href="https://www.tcscodevita.com/CodevitaV5/logout.jsp">Logout</a></td>
+								</tr>
+							</tbody></table>
+						</div>
+						<div class="tcsclip">
+							<img border="0" src="./TCS_ CodeVita - Coding ArenaF_files/header.jpg" width="978px" height="115px">
+						</div> <div class="tags">
+
+		<table class="all" border="0" width="100%">
+			<tbody><tr>
+				<td class="first">
+				<table class="welcome" border="0">
+					<tbody><tr>
+					<td width="23px"></td>
+					<td width="75%" align="left"><a class="navigationlink">Welcome BASIL ARACKAL</a></td>
+					<td width="20%" align="right"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp">Home</a></td>
+					</tr>
+				</tbody></table>
+				</td>
+				<td class="third" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/StartCoding" style="color:#FCDD41;font-weight:bold;">Coding Arena</a></td>
+				<td class="third" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/ChkExecuteServlet">My Compile &amp; Run </a></td>
+				<td class="third" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/ChkSubmissionServlet">My Submissions</a></td>
+				<td class="fifth" align="center"><a class="navigationlink" href="javascript:launchReport();">Graphs</a></td>
+				<td class="fifth" align="center"></td>
+					 <td class="fifth" align="center"><a class="navigationlink" href="https://www.tcscodevita.com/CodevitaV5/feedback.jsp">Feedback</a></td> 
+			</tr>
+		</tbody></table>
+
+	</div> 
+						<table class="main" border="0">
+							<tbody><tr>
+								<td width="23px"></td>
+							
+							
+								<td valign="top">
+								<!-- 	<div class="leftupper" >	 -->					
+										<table border="0" style="border-collapse:collapse;">
+											<tbody><tr>
+												<td height="10px"></td>
+											</tr>
+											<tr>
+												<td width="200px"><a class="title"><b>Coding Arena </b></a></td>
+												<td width="390px"></td>
+												<td align="left"><img border="0" src="./TCS_ CodeVita - Coding ArenaF_files/Codevita-logo-small.jpg" width="172px" height="45px"></td>
+												<td>
+												<table width="100%" height="10%" border="0" style="border-collapse:collapse;">
+											
+												<tbody><tr>
+												<td height="22px" style="background-color:gray ">
+														<a class="timenotif"><b>Time Left</b></a>
+												</td>
+											</tr>
+											<tr>
+												<td height="60px" width="172px" style="background-color:#EFEFEF;">
+														<table border="0" cellspacing="0" width="172px">
+														<tbody><tr>
+															<td width="20px"></td>
+															<td width="10%" style="background-color:white;"><a style="font-size:24px;color:#950000;font-weight:bold;" id="hr">05</a></td>
+															<td width="20px"></td>
+															<td width="10%" style="background-color:white;"><a style="font-size:24px;color:#950000;font-weight:bold;" id="min">56</a></td>
+															<td width="20px"></td>
+															<td width="10%" style="background-color:white;"><a style="font-size:24px;color:#950000;font-weight:bold;" id="sec">28</a></td>	
+															<td width="20px"></td>
+														</tr>
+														<tr>
+															<td width="20px"></td>
+															<td align="center"> hr </td>
+															<td width="20px"></td>
+															<td align="center"> min </td>
+															<td width="20px"></td>
+															<td align="center"> sec </td>
+															<td width="20px"></td>
+														</tr>
+													</tbody></table>					
+												</td>																								
+											</tr>
+											
+											</tbody></table>
+												</td>
+											
+											</tr>
+											<tr>
+												<td height="10px"></td>
+											</tr>
+										</tbody></table>
+																		
+											
+<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+	<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">A</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-2" aria-labelledby="ui-id-2" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-2">B</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-3" aria-labelledby="ui-id-3" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">C</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-4" aria-labelledby="ui-id-4" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-4" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">D</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-5" aria-labelledby="ui-id-5" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-5" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">E</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-6" aria-labelledby="ui-id-6" aria-selected="true"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-6" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-6">F</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-7" aria-labelledby="ui-id-7" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-7" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-7">G</a></li>
+		<li class="ui-helper-edit  ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="tabs-8" aria-labelledby="ui-id-8" aria-selected="false"><a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-8" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-8">H</a></li>
+
+	</ul>
+	
+	<div id="tabs-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">	
+				<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+				normal"><span class="problem">Problem : Securing Financial Transactions<o:p></o:p></span></b></p>
+				
+				<p class="western" align="JUSTIFY" style="line-height:140%;margin-bottom: 0in;">
+				<b>Statement</b><br><br>
+				ABC Corporation's finance team wants to deal with each of their supplier's invoicing details in a more secured way. Between ABC's and their suppliers' finance systems, ABC wants to build its own encryption/decryption logic.
+				<br><br>
+				ABC has a unique identifier for each of their supplier and wants to use that as part of the sensitive data that the finance systems exchange
+				<br><br>
+				You are working as part of the ABC's IT team and are tasked with implementing the functionality based on logic explained below.
+				<br><br>
+				<b>Encryption Logic:</b>
+				<br><br>
+				Encryption comprises of 3 actions in sequence
+				</p><ol>
+				<li>Get the supplier's id and find its length and append it with Supplier id</li>
+				<li>Perform the below transformations, 
+				<ol type="a">
+				<li>calculate the Hex code of every character in ASCII format, of the data to be exchanged</li>
+				<li>reverse it and </li>
+				<li>append it to the String constructed in Step 1</li>
+				</ol>
+				</li>
+				<li>Note that every append operation adds the '-' character</li>
+				</ol>
+				Let's see an example
+				<br><br>
+				Let data to be exchanged be: <i>Good Morning</i>
+				<br>
+				<p><b>Step1</b>
+				<br></p><ul>
+				<li>Supplier's Unique Identifier : 33 (provided in input)</li>
+				<li>Length of the Supplier's Unique Identified : 2 (to be computed)</li>
+				</ul><p></p>
+				<p><b>Step2</b>
+				<br></p><ul>
+				<li>Calculate Corresponding Hex Code of characters in ASCII format<br>
+				<b>G</b>: 47, <b>o</b>: 6F, <b>o</b>: 6F, <b>d</b>: 64, <b>SPACE</b>: 20, <b>M</b>: 4D, <b>o</b>: 6F, <b>r</b>: 72, <b>n</b>: 6E, <b>i</b>: 69, <b>n</b>: 6E, <b>g</b>: 67
+				</li>
+				
+				</ul><p></p>
+				<p><b>Step3</b>
+				<br></p><ul>
+				<li>Final Encrypted String: 2-33-74-F6-F6-46-02-D4-F6-27-E6-96-E6-76</li>
+				</ul><p></p>
+				<br><p>
+				<b>Decryption Logic: </b><br><br>
+				From encryption logic, it is easy to see how supplier id can be extracted from the encrypted string. Rest is reversing the steps done during encryption.  See example output to get a better understanding of Decryption Logic.
+				<br><br></p>
+				<p></p>
+				<p style="line-height:140%;"><b>Input Format:</b>
+				<br><br>
+				</p><p>First Line should contain <b>E</b> (for Encryption) or <b>D</b> (for Decryption)</p>
+				<p>If first line character is <b>E</b> then
+				<br></p><section style="margin-left: 2cm;">
+				Second line should contain input string to be encrypted<br>Third line should contain Sender's unique identifier
+				</section><p></p>
+				<p>Else If First line character is <b>D</b> then<br>
+				</p><section style="margin-left: 2cm;">
+				Second line should contain string to be decrypted
+				</section>
+				<p></p>
+				<br><br>
+				<p></p>
+				<p style="line-height:140%;"><b>Output Format:</b>
+				<br><br>
+				</p><p>If input character is <b>E</b> then print final encrypted string</p>
+				<p>If input character is <b>D</b> then
+				<br></p><section style="margin-left: 2cm;">
+				Print Supplier's unique identifier on first line<br>Print Decrypted string on second line
+				</section>
+				<p></p>
+				<br><br>
+				<p></p>
+				
+				<a><b>Sample Input and Output</b></a><a><br><br>
+				<table width="650px" border="1" cellspacing="0" cellpadding="2">
+					<tbody><tr>
+						<th style="height:20px">SNo.</th><th style="height:20px">Input</th><th style="height:20px">Output</th>
+					</tr>
+					<tr>
+						<td style="width:10px;"><br>1<br></td>
+						<td style="width:300px;"><br>E<br>
+Hello World<br>
+45<br>
+</td>
+						<td style="width:300px"><br>2-45-84-56-C6-C6-F6-02-75-F6-27-C6-46<br></td>						
+					</tr>
+					<tr>
+						<td style="width:10px;"><br>2</td>
+						<td style="width:300px;"><br>D<br>
+2-45-84-56-C6-C6-F6-02-75-F6-27-C6-46<br>
+<br></td>
+						<td style="width:300px"><br>45<br>Hello World<br><br></td>					
+					</tr>
+										
+				</tbody></table>
+				<br><br>
+				
+			</a></div><a>
+						<div class="note">
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i> Please do not use package and namespace in your code.
+									For object oriented languages your code should be written in
+									one class.</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>Participants submitting solutions in C language should
+									not use functions from &lt;conio.h&gt; / &lt;process.h&gt; as
+									these files do not exist in gcc</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>For C and C++, return type of main() function should be
+									int.</i>
+							</p>
+							<br> <br> <font color="blue"><b>© 2016
+									Tata Consultancy Services Limited. All Rights Reserved. </b></font>
+							<p class="western" align="JUSTIFY" style="margin-bottom: 0in">
+								<br>
+							</p>
+						</div>
+					</a></div><a> <br> <br> </a><a style="color: #950000; font-weight: bold;">Submit
+						Answer</a>
+					<div class="submitsolution">
+						<input type="checkbox" name="confirm">I , <b>BASIL ARACKAL</b>
+						confirm that the answer submitted is my own.<br> <br>
+						<div class="fileinputs">
+							<input type="file" class="file_hidden" name="txtUNameMem1" id="Program_A" size="25" onchange="select_file(this.id,this,&#39;STARTED&#39;)">
+							<div class="fakefile">
+								<input size="30" name="fake_file_input"> <input type="button" value="Browse..." name="Browse">
+							</div>
+						</div>
+						<div class="filesubmit">
+							<!--<input type="Submit" value="Submit" name="Submit" id="upload" style="position:absolute;left:10px;">-->
+							<input type="image" value="Submit" name="Submit" id="upload" src="./TCS_ CodeVita - Coding ArenaF_files/Submit-bttn.jpg" height="20px">
+							<span></span>
+						</div>
+					</div>
+				</td>
+				<td valign="top" height="10%"><div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: #D3D3D3; height: 22px; width: 172px"><a href="javascript:checkStatus();" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div></td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-2" aria-labelledby="ui-id-2" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+							<p class="MsoNormal" align="center" style="text-align: left">
+								<b style="mso-bidi-font-weight: normal"><span class="problem">Problem : Fill the Boxes<o:p></o:p></span></b>
+							</p>
+
+							<p class="western" align="JUSTIFY" style="line-height: 140%; margin-bottom: 0in;"><b>Statement</b><br><br>
+								There are N horizontally adjacent boxes on a sheet. Raju has to fill them(starting from the left) by using two colors: Red and Green. If he picks up Green color, he can fill one or more adjacent boxes while if he picks up red color, he can fill only one box and after that he has to place the color back.
+								<br><br>
+								It is pre-decided that which box will be filled with which color. You have to find the minimum no. of times Raju will have to place the picked up color back in order to match the given pattern. Raju can't re-arrange the position of the boxes.							
+							<br><br>
+						
+							</p>
+
+
+							<p style="line-height: 140%;"><b>Input Format:</b>
+							<br><br>First line contains a Number and String delimited by whitespace where,
+							</p><ol>
+							<li>First Number is number of boxes</li>
+							<li>Second String is the color pattern</li>
+							</ol>
+							<br>
+							<p></p>
+
+							<p style="line-height: 140%;"><b>Output Format:</b>
+							<br><br>
+							The minimum no. of times Raju will have to place the picked up color back in order to match the given pattern.
+							<br><br>
+							</p>
+
+
+							<p style="line-height: 140%;"><b>Constraints:</b><br><br>
+							
+							</p><ol>
+							<li>If he picks up Green color, he can fill one or more adjacent boxes while if he picks up red color, he can fill only one box. </li>
+							<li>All the boxes will have to be filled sequentially.</li>
+							
+							</ol>
+							
+							<br>
+							<p></p>
+							<br> <a><b>Sample Input and Output</b></a><a><br>
+									<br>
+									<table width="650px" border="1" cellspacing="0" cellpadding="2">
+										<tbody><tr>
+											<th style="height: 20px">SNo.</th>
+											<th style="height: 20px">Input</th>
+											<th style="height: 20px">Output</th>
+											<th style="height: 20px">Explaination</th>
+										</tr>
+										<tr>
+											<td style="width: 10px;"><br>1<br></td>
+											<td style="width: 100px;"><br>5 RGGRR<br></td>
+											<td style="width: 100px"><br>3<br></td>
+											<td style="width: 350px"><br>First Raju picked Red color for filling and next color is Green so he placed red color back so count= 1<br>
+Raju picked Green color and filled next two boxes with Green and placed Green color back, now count =2<br>
+Again Raju picked Red color and filled the box and placed it back, now count=3<br>
+Again Raju picked Red color filled the box and as it is last box no need to place it back, so final count=3
+<br><br></td>
+										</tr>
+										<tr>
+											<td style="width: 10px;">2</td>
+											<td style="width: 100px;"><br>5 RGGGG<br></td>
+											<td style="width: 100px;"><br>1<br></td>
+											<td style="width: 350px"><br>First Raju picked R color for filling and next color is G so he placed red color back so count= 1<br>
+Raju picked G color filled next 4 boxes with G color, so final count =1
+<br><br></td>
+										</tr>
+										
+									</tbody></table> <br> <br>
+							
+						</a></div><a>
+						<div class="note">
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i> Please do not use package and namespace in your code.
+									For object oriented languages your code should be written in
+									one class.</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>Participants submitting solutions in C language should
+									not use functions from &lt;conio.h&gt; / &lt;process.h&gt; as
+									these files do not exist in gcc</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>For C and C++, return type of main() function should be
+									int.</i>
+							</p>
+							<br> <br> <font color="blue"><b>© 2016
+									Tata Consultancy Services Limited. All Rights Reserved. </b></font>
+							<p class="western" align="JUSTIFY" style="margin-bottom: 0in">
+								<br>
+							</p>
+						</div>
+					</a></div><a> <br> <br> </a><a style="color: #950000; font-weight: bold;">Submit
+						Answer</a>
+					<div class="submitsolution">
+						<input type="checkbox" name="confirm">I , <b>BASIL ARACKAL</b>
+						confirm that the answer submitted is my own.<br> <br>
+						<div class="fileinputs">
+							<input type="file" class="file_hidden" name="txtUNameMem1" id="Program_B" size="25" onchange="select_file(this.id,this,&#39;STARTED&#39;)">
+							<div class="fakefile">
+								<input size="30" name="fake_file_input"> <input type="button" value="Browse..." name="Browse">
+							</div>
+						</div>
+						<div class="filesubmit">
+							<!--<input type="Submit" value="Submit" name="Submit" id="upload" style="position:absolute;left:10px;">-->
+							<input type="image" value="Submit" name="Submit" id="upload" src="./TCS_ CodeVita - Coding ArenaF_files/Submit-bttn.jpg" height="20px">
+							<span></span>
+						</div>
+					</div>
+				</td>
+				<td valign="top"><div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: #D3D3D3; height: 22px; width: 172px"><a href="javascript:checkStatus();" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div></td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-3" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+							<p class="MsoNormal" align="center" style="text-align: left">
+								<b style="mso-bidi-font-weight: normal"><span class="problem">Problem : Land Buy<o:p></o:p></span></b>
+							</p>
+
+							<p class="western" align="JUSTIFY" style="line-height: 140%; margin-bottom: 0in;">
+								<b>Statement</b><br><br>
+								Land is divided into plots. All plots are for sale. Some plot numbers are palindromes. Our goal is to buy maximum number of palindrome plots at minimum cost. The cost in this case is measured in terms of distance between plots. Lesser the distance between plots we buy, lower the cost and vice-versa.
+								<br><br>
+								Write a program to purchase plots as per given conditions
+							<br> <br>
+							</p>
+							<p style="line-height: 140%;">
+								<b>Input Format:</b> 
+								<br><br>
+								First line contains 3 numbers delimited by comma where,
+								</p><ol>
+								<li>First number is plot number of the leftmost plot</li>
+								<li>Second number plot number of the rightmost plot</li>
+								<li>Third number is maximum distance between plots we can buy</li>
+								</ol>
+								<br>
+							<p></p>
+							<p style="line-height: 140%;">
+							<b>Output Format:</b> 
+							<br><br>Print the output in below format
+							<br><br>
+							Number of palindrome plots, start index of palindrome plot, end index of palindrome plot
+							<br>OR<br>Print 0,0,0 if no purchase possible
+							<br><br>
+							</p>
+
+							<p style="line-height: 140%;">
+							<b>Constraints:</b><br><br>
+							
+								We have 4 conditions for buying:
+								</p><ol>
+							<li>If there are no palindrome number plots then no purchase should be made</li>
+							<li>We need to minimize the cost</li>
+							<li>Search for buying plots should start at the smallest plot number</li>
+							<li>Permissible distance between two plots to be bought cannot exceed difference between left and right most plot numbers mentioned in input</li>
+							</ol>
+														
+							<br>
+							<p></p>
+
+							<a><b>Sample Input and Output</b></a><a><br> <br>
+									<table width="650px" border="1" cellspacing="0" cellpadding="2">
+										<tbody><tr>
+											<th style="height: 20px">SNo.</th>
+											<th style="height: 20px">Input</th>
+											<th style="height: 20px">Output</th>
+											<th style="height: 20px">Explaination</th>
+										</tr>
+										<tr>
+											<td style="width: 10px;"><br>1<br></td>
+											<td style="width: 100px;"><br>80,120,12<br></td>
+											<td style="width: 100px"><br>2,99,101<br></td>
+											<td style="width: 350px"><br>Possible palindrome plots that satisfy constraints are<br>&lt;88,99&gt;, &lt;99, 101&gt;, &lt;101, 111&gt;<br>In all cases we are able to buy only two palindrome plots. However, the range 99 to 101 is the cheapest. <br>
+											Hence our answer is 2,99,101<br><br></td>
+										</tr>
+										<tr>
+											<td style="width: 10px;"><br>2<br></td>
+											<td style="width: 100px;"><br>12,20,1<br></td>
+											<td style="width: 100px"><br>0,0,0<br></td>
+											<td style="width: 350px"><br>Between 12 and 20 we do not have any palindromes for length of 1.<br><br></td>
+										</tr>
+									</tbody></table> <br> <br>
+
+									
+						</a></div><a>
+						<div class="note">
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i> Please do not use package and namespace in your code.
+									For object oriented languages your code should be written in
+									one class.</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>Participants submitting solutions in C language should
+									not use functions from &lt;conio.h&gt; / &lt;process.h&gt; as
+									these files do not exist in gcc</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>For C and C++, return type of main() function should be
+									int.</i>
+							</p>
+							<br> <br> <font color="blue"><b>© 2016
+									Tata Consultancy Services Limited. All Rights Reserved. </b></font>
+							<p class="western" align="JUSTIFY" style="margin-bottom: 0in">
+								<br>
+							</p>
+						</div>
+					</a></div><a> <br> <br> </a><a style="color: #950000; font-weight: bold;">Submit
+						Answer</a>
+					<div class="submitsolution">
+						<input type="checkbox" name="confirm">I , <b>BASIL ARACKAL</b>
+						confirm that the answer submitted is my own.<br> <br>
+						<div class="fileinputs">
+							<input type="file" class="file_hidden" name="txtUNameMem1" id="Program_C" size="25" onchange="select_file(this.id,this,&#39;STARTED&#39;)">
+							<div class="fakefile">
+								<input size="30" name="fake_file_input"> <input type="button" value="Browse..." name="Browse">
+							</div>
+						</div>
+						<div class="filesubmit">
+							<!--<input type="Submit" value="Submit" name="Submit" id="upload" style="position:absolute;left:10px;">-->
+							<input type="image" value="Submit" name="Submit" id="upload" src="./TCS_ CodeVita - Coding ArenaF_files/Submit-bttn.jpg" height="20px">
+							<span></span>
+						</div>
+					</div>
+				</td>
+				<td valign="top"><div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: #D3D3D3; height: 22px; width: 172px"><a href="javascript:checkStatus();" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div></td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-4" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">	
+					<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+					normal"><span class="problem">Problem : Matrix Match<o:p></o:p></span></b></p>
+					
+					<p class="western" align="JUSTIFY" style="line-height:140%;margin-bottom: 0in;">
+					<b>Statement</b><br><br>
+					An m x n matrix will be given that contains only values 0 and 1. There is a pattern of 0s and 1s that you have to find and report the number of occurrences of that pattern in the matrix. 
+					<br><br>	
+					</p>
+					
+					
+					<p style="line-height:140%;"><b>Input Format:</b>
+					<br><br>
+					</p><ol>
+					<li>First line contains an integer <b>m</b> that denotes number of rows of in the matrix.</li><li>
+ Second line contains an integer <b>n</b> that denotes the number of columns in the matrix.</li><li>
+ Next, there will be m lines, each with n columns. Columns will be delimited by whitespace character.</li><li>
+ Last line will consist of the string pattern which you have to search in the matrix.</li>
+
+					</ol>
+					<br>
+					<p></p>
+					
+					<p style="line-height:140%;"><b>Output Format:</b>
+					<br><br>
+					Print the number of occurrences of the pattern found in the matrix.
+					<br><br>
+					</p>
+										
+					<p class="western" align="JUSTIFY" style="line-height:140%;margin-bottom: 0in;">
+					<font face="Verdana, sans-serif"><b>Constraints:</b></font><br>
+					<br><br>The pattern has to be searched in the matrix in the following directions:
+					</p><ol>
+					<li>Horizontally, left to right</li>
+					<li>Vertically, top to bottom</li>
+					<li>Diagonally, top left to right bottom</li>
+					</ol>
+					<br>
+					<p></p>
+					
+					<a><b>Sample Input and Output</b></a><a><br><br>
+					<table width="700px" border="1" cellspacing="0" cellpadding="2">
+						<tbody><tr>
+							<th style="height:20px">SNo.</th><th style="height:20px">Input</th><th style="height:20px">Output</th><th style="height:20px">Explaination</th>
+						</tr>
+						<tr>
+							<td style="width:10px;">1</td>
+							<td style="width:150px;"><br>5<br>
+5<br>
+1 0 0 1 0<br>
+1 0 1 1 1<br>
+1 1 1 1 1<br>
+0 1 0 1 0<br>
+0 0 0 0 1<br>
+000
+<br><br></td>
+							<td style="width:100px;"><br>2<br><br></td>
+							<td style="width:350px"><br>
+							<ol>
+							<li>The pattern '000' is present <b>twice</b> horizontally in row 5</li><li>
+The pattern '000' is not present  vertically in the matrix</li><li>
+The pattern '000' is not present  diagonally in the matrix</li>
+
+							</ol>
+							<br></td>							
+						</tr>
+							<tr>
+							<td style="width:10px;">2</td>
+							<td style="width:150px;"><br>5<br>
+5<br>
+1 0 0 1 0<br>
+1 0 1 1 1<br>
+1 1 1 1 1<br>
+0 1 0 1 0<br>
+0 0 0 0 1<br>
+1111<br>
+<br><br></td>
+							<td style="width:100px;"><br>3<br></td>
+							<td style="width:350px"><br>
+							<ol>
+							<li>The pattern '1111' is present <b>twice</b> horizontally in row 3</li><li>
+The pattern '1111' is present  vertically in the column 4</li><li>
+The pattern '1111' is not present  diagonally in the matrix</li>
+
+							</ol>
+							<br></td>							
+						</tr>			
+					</tbody></table>
+					<br><br>
+				
+				</a></div><a>
+						<div class="note">
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i> Please do not use package and namespace in your code.
+									For object oriented languages your code should be written in
+									one class.</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>Participants submitting solutions in C language should
+									not use functions from &lt;conio.h&gt; / &lt;process.h&gt; as
+									these files do not exist in gcc</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>For C and C++, return type of main() function should be
+									int.</i>
+							</p>
+							<br> <br> <font color="blue"><b>© 2016
+									Tata Consultancy Services Limited. All Rights Reserved. </b></font>
+							<p class="western" align="JUSTIFY" style="margin-bottom: 0in">
+								<br>
+							</p>
+						</div>
+					</a></div><a> <br> <br> </a><a style="color: #950000; font-weight: bold;">Submit
+						Answer</a>
+					<div class="submitsolution">
+						<input type="checkbox" name="confirm">I , <b>BASIL ARACKAL</b>
+						confirm that the answer submitted is my own.<br> <br>
+						<div class="fileinputs">
+							<input type="file" class="file_hidden" name="txtUNameMem1" id="Program_D" size="25" onchange="select_file(this.id,this,&#39;STARTED&#39;)">
+							<div class="fakefile">
+								<input size="30" name="fake_file_input"> <input type="button" value="Browse..." name="Browse">
+							</div>
+						</div>
+						<div class="filesubmit">
+							<!--<input type="Submit" value="Submit" name="Submit" id="upload" style="position:absolute;left:10px;">-->
+							<input type="image" value="Submit" name="Submit" id="upload" src="./TCS_ CodeVita - Coding ArenaF_files/Submit-bttn.jpg" height="20px">
+							<span></span>
+						</div>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: #D3D3D3; height: 22px; width: 172px"><a href="javascript:checkStatus();" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-5" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+					<div class="Section1">	
+					<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+					normal"><span class="problem">Problem : Base, Face and Place Values<o:p></o:p></span></b></p>
+					
+					<p class="western" align="JUSTIFY" style="line-height:140%;margin-bottom: 0in;">
+					<b>Statement</b><br><br>
+					Numbers when represented in decimal system have Base Value 10. The denominations i.e. Units, Tens, Hundreds, Thousands etc. are its Place Values. The actual numbers between 0 to 9 are the Face values. It is easy to see that as the Base Value changes, both Face and Place Values will also change.
+					<br><br>
+					For the purpose of the program, assume bases up to 36 with face values one of the following:
+					<br>
+					0<br>
+1<br>
+2<br>
+...<br>
+9<br>
+A (value 10 in base 10)<br>
+B<br>
+...<br>
+Z (value 35 in base 10)<br>
+<br>
+					Your task is to write a program to find out base values for which a given number expressed in decimal system has the desired face value with a given place value
+					<br><br>
+					<b>Example</b>: Find which bases represent 56 in a manner where Face Value 3 is found in Place Value 1<br><br>
+					Inputs in decimal (N) = 56<br>
+Face Value (F) = 3<br>
+Place Value (P) =1<br><br>
+</p><div style="margin: auto; display: table;">
+<table width="300px" border="1" cellspacing="0" cellpadding="2">
+										<tbody><tr>
+											<th style="height: 20px">Base</th>
+											<th style="height: 20px">Value of 56 in given Base</th>
+											
+										</tr>
+										<tr><td style="width: 100px;">Base-2</td><td style="width: 100px;">111000</td></tr>
+<tr><td style="width: 100px;">Base-3</td><td style="width: 100px;">2002</td></tr>
+<tr><td style="width: 100px;">Base-4</td><td style="width: 100px;">320</td></tr>
+<tr><td style="width: 100px;">Base-5</td><td style="width: 100px;">211</td></tr>
+<tr><td style="width: 100px;color:red">Base-6</td><td style="width: 100px;color:red">132</td></tr>
+<tr><td style="width: 100px;">Base-7</td><td style="width: 100px;">110</td></tr>
+<tr><td style="width: 100px;">Base-8</td><td style="width: 100px;">70</td></tr>
+<tr><td style="width: 100px;">Base-9</td><td style="width: 100px;">62</td></tr>
+<tr><td style="width: 100px;">Base-10</td><td style="width: 100px;">56</td></tr>
+<tr><td style="width: 100px;">Base-11</td><td style="width: 100px;">51</td></tr>
+<tr><td style="width: 100px;">Base-12</td><td style="width: 100px;">48</td></tr>
+<tr><td style="width: 100px;">Base-13</td><td style="width: 100px;">44</td></tr>
+<tr><td style="width: 100px;">Base-14</td><td style="width: 100px;">40</td></tr>
+<tr><td style="width: 100px;color:red">Base-15</td><td style="width: 100px;color:red">3B</td></tr>
+<tr><td style="width: 100px;color:red">Base-16</td><td style="width: 100px;color:red">38</td></tr>
+<tr><td style="width: 100px;color:red">Base-17</td><td style="width: 100px;color:red">35</td></tr>
+<tr><td style="width: 100px;color:red">Base-18</td><td style="width: 100px;color:red">32</td></tr>
+<tr><td style="width: 100px;">Base-19</td><td style="width: 100px;">2I</td></tr>
+<tr><td style="width: 100px;">Base-20</td><td style="width: 100px;">2G</td></tr>
+<tr><td style="width: 100px;">Base-21</td><td style="width: 100px;">2E</td></tr>
+<tr><td style="width: 100px;">Base-22</td><td style="width: 100px;">2C</td></tr>
+<tr><td style="width: 100px;">Base-23</td><td style="width: 100px;">2A</td></tr>
+<tr><td style="width: 100px;">Base-24</td><td style="width: 100px;">28</td></tr>
+<tr><td style="width: 100px;">Base-25</td><td style="width: 100px;">26</td></tr>
+<tr><td style="width: 100px;">Base-26</td><td style="width: 100px;">24</td></tr>
+<tr><td style="width: 100px;">Base-27</td><td style="width: 100px;">22</td></tr>
+<tr><td style="width: 100px;">Base-28</td><td style="width: 100px;">20</td></tr>
+<tr><td style="width: 100px;">Base-29</td><td style="width: 100px;">1R</td></tr>
+<tr><td style="width: 100px;">Base-30</td><td style="width: 100px;">1Q</td></tr>
+<tr><td style="width: 100px;">Base-31</td><td style="width: 100px;">1P</td></tr>
+<tr><td style="width: 100px;">Base-32</td><td style="width: 100px;">1O</td></tr>
+<tr><td style="width: 100px;">Base-33</td><td style="width: 100px;">1N</td></tr>
+<tr><td style="width: 100px;">Base-34</td><td style="width: 100px;">1M</td></tr>
+<tr><td style="width: 100px;">Base-35</td><td style="width: 100px;">1L</td></tr>
+<tr><td style="width: 100px;">Base-36</td><td style="width: 100px;">1K</td></tr>
+										
+									</tbody></table>
+</div><br>
+<div style="margin: auto; display: table;"><b>Table 1.</b>
+									</div>
+					<br><br>
+					Table 1 depicts number 56 is bases from 2 to 36. The Rows marked in <font color="red">Red</font> are the ones where Face Value is 3 in Place Value 1. Hence Base 6, 15, 16, 17 and 18 are the required answers.
+
+					<br><br>	
+					<p></p>
+					
+					
+					<p style="line-height:140%;"><b>Input Format:</b>
+					<br>
+					</p><ol>
+					<li>First line of input is decimal number N</li><li>
+Second line of input is Face Value F. Can be a number or alphabet (in capital letter)</li><li>
+Third line of input is Place Value P
+</li>
+					
+					</ol>
+					<br>
+					<p></p>
+					
+					<p style="line-height:140%;"><b>Output Format:</b>
+					<br><br>
+					Print  base values  for which a given number expressed in decimal system has the desired face value with a given place value.<br><br>
+					All output values should be delimited by whitespace character.
+					<br><br>
+					</p>
+					
+					<p style="line-height:140%;"><br><br>
+					<b>Constraints:</b><br><br>							
+					</p><ol>
+					<li>0 &lt; N &lt; 10^19</li>
+					<li>F can be [(0-9) or (A-Z)]</li>
+					<li>0 &lt;= P &lt;= length of the number in base value 36</li>								
+					</ol>
+					<br>							
+					<p></p>
+					<a><b>Sample Input and Output</b></a><a><br> <br>
+									<table width="650px" border="1" cellspacing="0" cellpadding="2">
+										<tbody><tr>
+											<th style="height: 20px">SNo.</th>
+											<th style="height: 20px">Input</th>
+											<th style="height: 20px">Output</th>
+											
+										</tr>
+										<tr>
+											<td style="width: 10px;"><br>1<br></td>
+											<td style="width: 100px;"><br>56<br>
+3<br>
+1
+<br></td>
+											<td style="width: 100px"><br>6 15 16 17 18<br></td>
+											
+										</tr>
+										<tr>
+											<td style="width: 10px;"><br>2<br></td>
+											<td style="width: 100px;"><br>50<br>E<br>0<br></td>
+											<td style="width: 100px"><br>18 36<br></td>
+											
+										</tr>
+									</tbody></table> <br> <br>
+					
+				
+				</a></div><a>
+						<div class="note">
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i> Please do not use package and namespace in your code.
+									For object oriented languages your code should be written in
+									one class.</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>Participants submitting solutions in C language should
+									not use functions from &lt;conio.h&gt; / &lt;process.h&gt; as
+									these files do not exist in gcc</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>For C and C++, return type of main() function should be
+									int.</i>
+							</p>
+							<br> <br> <font color="blue"><b>© 2016
+									Tata Consultancy Services Limited. All Rights Reserved. </b></font>
+							<p class="western" align="JUSTIFY" style="margin-bottom: 0in">
+								<br>
+							</p>
+						</div>
+					</a></div><a> <br> <br> </a><a style="color: #950000; font-weight: bold;">Submit
+						Answer</a>
+					<div class="submitsolution">
+						<input type="checkbox" name="confirm">I , <b>BASIL ARACKAL</b>
+						confirm that the answer submitted is my own.<br> <br>
+						<div class="fileinputs">
+							<input type="file" class="file_hidden" name="txtUNameMem1" id="Program_E" size="25" onchange="select_file(this.id,this,&#39;STARTED&#39;)">
+							<div class="fakefile">
+								<input size="30" name="fake_file_input"> <input type="button" value="Browse..." name="Browse">
+							</div>
+						</div>
+						<div class="filesubmit">
+							<!--<input type="Submit" value="Submit" name="Submit" id="upload" style="position:absolute;left:10px;">-->
+							<input type="image" value="Submit" name="Submit" id="upload" src="./TCS_ CodeVita - Coding ArenaF_files/Submit-bttn.jpg" height="20px">
+							<span></span>
+						</div>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: #D3D3D3; height: 22px; width: 172px"><a href="javascript:checkStatus();" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-6" aria-labelledby="ui-id-6" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+							<p class="MsoNormal" align="center" style="text-align: left">
+								<b style="mso-bidi-font-weight: normal"><span class="problem">Problem : Long Division Method<o:p></o:p></span></b>
+							</p>
+
+							<p class="western" align="JUSTIFY" style="line-height: 140%; margin-bottom: 0in;">
+						
+								<b>Statement :</b>
+								<br><br>
+								Math is here back again. With a number of methods out there, let's implement this famous <b>Long Division</b> method to find the square root of a number, via code.
+								<br><br>
+								For example, let's calculate the square root of 283.456.
+								<br><br>
+								Steps to calculate square root of 283.456 by Long Division method as follows:
+								<br><br>
+								</p><div>
+								<b>Step 1</b>: Make pairs of the number 283.456 starting from the decimal point(.) and traversing in both left and right directions.
+								<br><br>
+								<div style="width: 100%">
+								<div style="display: inline-block; width:300px">
+								on traversing right:
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion1.png" height="50px" width="80px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">
+								on traversing left:
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion2.png" height="50px" width="80px">
+								</div>
+								</div>								
+								</div>
+								<br><br>
+								<div>
+								<b>Step 2</b>: Begin by taking the closest perfect square.
+								<br><br>This is how the division would look like<br><br>
+								<div>
+								<div style="display: inline-block; width:150px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion3.png" height="150px" width="150px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion4.png" height="100px" width="100px">
+								</div>
+								</div>								
+								</div>
+								<br><br>
+								<div>
+								<b>Step 3</b>: Whatever new number is taken on the top (in this case: 1), is added on the left-side and the next pair(83) is brought own.<br><br>This is how the division would look like
+								<br><br>
+								<div>
+								<div style="display: inline-block; width:150px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion5.png" height="150px" width="150px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion6.png" height="80px" width="100px">
+								</div>
+								</div>								
+								</div>
+								<br><br>
+								<div>
+								<b>Step 4</b>: Now we need to get the closest to the new dividend (in this case: 183)
+								<br><br>
+								<div>
+								<div style="display: inline-block; width:200px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion7.png" height="200px" width="200px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion8.png" height="80px" width="100px">
+								</div>								
+								</div>	
+								<br><br><i>Repeat Steps 3 and 4 until the remainder is 0, or if u reach the decimal point</i>
+								</div>
+								<br><br>
+								<div>
+								<b>Step 5</b>: This is how the division would look like
+								<br><br>
+								<div>
+								<div style="display: inline-block; width:200px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion9.png" height="200px" width="200px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion10.png" height="80px" width="80px">
+								</div>								
+								</div>	
+								<br><br><i>Like normal division, a decimal point is added to the quotient, when traversing/encountering with a decimal point in the dividend</i>
+								</div>
+								<br><br>
+								<div>
+								<b>Step 6</b>: This is how the division would look like
+								<br><br>
+								<div>
+								<div style="display: inline-block; width:200px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion11.png" height="200px" width="200px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion12.png" height="130px" width="100px">
+								</div>								
+								</div>	
+								<br><br>								
+								</div>
+								<br><br>
+								<div>
+								<b>Step 7</b>: This is how the division would look like
+								<br><br>
+								<div>
+								<div style="display: inline-block; width:200px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion13.png" height="200px" width="200px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion14.png" height="130px" width="100px">
+								</div>								
+								</div>	
+								<br><br>								
+								</div>
+								<br><br>
+								<div>
+								<b>Step 8</b>: This is how the division would look like
+								<br><br>
+								<div>
+								<div style="display: inline-block; width:250px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion15.png" height="250px" width="250px">
+								<br>
+								</div>
+								<div style="display: inline-block; width:300px">							
+								<br><img src="./TCS_ CodeVita - Coding ArenaF_files/longDivion16.png" height="130px" width="130px">
+								</div>								
+								</div>	
+								<br><br><i>When making the pairs in Step1, ensure that you have 3-pairs or 6-digits after the decimal point </i>
+								<br>For e.g. if the square root of 3 is to be found; pairs will be made as 3.00 00 00
+								</div>
+								<br><br>
+								<div>
+								<b><font color="red">Note:</font></b>
+								<br>
+								<ul><li>In input value after decimal point there should be 3 pairs(6 digits)</li><li>Output should be printed up to 3 decimal places</li></ul>
+								</div>
+								
+							<p></p>
+
+							<p style="line-height: 140%;">
+								<b>Input Format:</b> <br>
+								<br>
+								Number whose square root is to be found
+								<br><br>
+							</p>
+
+							<p style="line-height: 140%;">
+								<b>Output Format:</b> <br>
+								<br>For every input, the output would be a line containing the final set of 5 numbers, delimited by space. The numbers are
+								</p><ol>
+								<li>Dividend in the step where actual square root up to desired precision is obtained</li>
+								<li>Divisor in the step where actual square root up to desired precision is obtained</li>
+								<li>Quotient in the last step </li>
+								<li>Remainder in the step where actual square root up to desired precision is obtained </li>
+								<li>Sum in the step where actual square root up to desired precision is obtained </li>
+								</ol>
+								<br>
+								See examples for better understanding
+								<br><br>
+							<p></p>
+
+							<a><b>Sample Input and Output</b></a><a><br>
+								<br>
+									<table width="650px" border="1" cellspacing="0" cellpadding="2">
+										<tbody><tr>
+											<th style="height: 20px">SNo.</th>
+											<th style="height: 20px">Input</th>
+											<th style="height: 20px">Output</th>
+										</tr>
+										<tr>
+											<td style="width: 7px;"><br>1<br></td>
+											<td style="width: 100px;"><br>45.478<br></td>
+											<td style="width: 300px"><br>50400 13483 <mark>6.743</mark> 9951 13486<br></td>
+										</tr>
+										<tr>
+											<td style="width: 7px;"><br>2<br></td>
+											<td style="width: 100px;"><br>16<br></td>
+											<td style="width: 300px"><br>16 04 <mark>4.000</mark> 0 8<br>
+											</td>
+										</tr>
+										<tr>
+											<td style="width: 7px;"><br>3<br></td>
+											<td style="width: 100px;"><br>283.456<br></td>
+											<td style="width: 300px"><br>207100 33666 <mark>16.836</mark> 5104 33672<br>
+											</td>
+										</tr>
+
+									</tbody></table> <br>
+								<br>
+									
+						</a></div><a>
+						<div class="note">
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i> Please do not use package and namespace in your code.
+									For object oriented languages your code should be written in
+									one class.</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>Participants submitting solutions in C language should
+									not use functions from &lt;conio.h&gt; / &lt;process.h&gt; as
+									these files do not exist in gcc</i>
+							</p>
+							<p class="western" style="margin-top: 0.07in; margin-bottom: 0in; widows: 2; orphans: 2">
+								<font color="#950000"><i><b>Note</b></i></font>:<br> <br>
+								<i>For C and C++, return type of main() function should be
+									int.</i>
+							</p>
+							<br> <br> <font color="blue"><b>© 2016
+									Tata Consultancy Services Limited. All Rights Reserved. </b></font>
+							<p class="western" align="JUSTIFY" style="margin-bottom: 0in">
+								<br>
+							</p>
+						</div>
+					</a></div><a> <br> <br> </a><a style="color: #950000; font-weight: bold;">Submit
+						Answer</a>
+					<div class="submitsolution">
+						<input type="checkbox" name="confirm">I , <b>BASIL ARACKAL</b>
+						confirm that the answer submitted is my own.<br> <br>
+						<div class="fileinputs">
+							<input type="file" class="file_hidden" name="txtUNameMem1" id="Program_F" size="25" onchange="select_file(this.id,this,&#39;STARTED&#39;)">
+							<div class="fakefile">
+								<input size="30" name="fake_file_input"> <input type="button" value="Browse..." name="Browse">
+							</div>
+						</div>
+						<div class="filesubmit">
+							<!--<input type="Submit" value="Submit" name="Submit" id="upload" style="position:absolute;left:10px;">-->
+							<input type="image" value="Submit" name="Submit" id="upload" src="./TCS_ CodeVita - Coding ArenaF_files/Submit-bttn.jpg" height="20px">
+							<span></span>
+						</div>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: #D3D3D3; height: 22px; width: 172px"><a href="javascript:checkStatus();" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-7" aria-labelledby="ui-id-7" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+					<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+					normal"><span class="problem">Problem : Saving Private Ryan<o:p></o:p></span></b></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana"><o:p> </o:p></span></p>
+					
+					
+					
+					<p class="MsoNormal"><o:p> </o:p></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana">
+					<b>Statement</b>
+					<br><br>
+					It's the D-Day. Normandy has been invaded. German forces are all over, while American infantry is badly wounded. Captain John Miller with few other survivors is in search of a missing paratrooper, Private James Ryan.<o:p></o:p></span></p>
+				</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="G"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-7"><input type="image" src="./TCS_ CodeVita - Coding ArenaF_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+	
+	<div id="tabs-8" aria-labelledby="ui-id-8" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+		<table>
+			<tbody><tr>
+				<td width="800px" valign="top">
+					<div class="border">
+						<div class="Section1">
+					<p class="MsoNormal" align="center" style="text-align:left"><b style="mso-bidi-font-weight:
+					normal"><span class="problem">Problem : Checking Moves <o:p></o:p></span></b></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana"><o:p> </o:p></span></p>
+					
+					
+					
+					<p class="MsoNormal"><o:p> </o:p></p>
+					
+					<p class="MsoNormal"><span style="font-family:Verdana">
+					<b>Background</b>
+					<br><br>
+					A Chess board position is accurately captured by Forsyth-Edwards notation and is abbreviated as FEN. A FEN "record" defines a particular game position, all in one line of text and using only the ASCII character set. A FEN record consists of six fields. A complete description of the FEN format to represent Chess positions can be found <a href="https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation" target="_blank" style="color:#0000ff; background-color:transparent; text-decoration:none">here</a> <o:p></o:p></span></p>
+				</div>
+						<table>
+							<tbody><tr>
+								<td>
+									<form action="https://www.tcscodevita.com/CodevitaV5/StartProblem" method="post">
+										<input type="hidden" name="radio" value="H"> <a href="https://www.tcscodevita.com/CodevitaV5/problemstart.jsp#tabs-8"><input type="image" src="./TCS_ CodeVita - Coding ArenaF_files/View-prblm-bttn.jpg" name="View"></a>
+									</form>
+								</td>
+								<td width="200px"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+				<td valign="top">
+
+
+					<div class="rightmain">
+						<table width="100%" height="10%" border="0" style="border-collapse: collapse;">
+
+
+							<tbody><tr>
+								<td style="background-color: #D3D3D3; height: 22px"><a href="https://www.tcscodevita.com/CodevitaV5/guidelines.jsp" style="color: #950000; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Rules
+										&amp; Regulations</a></td>
+							</tr>
+							<tr>
+								<td height="15px" width="172px">
+								</td><td>
+							</td></tr>
+							<tr>
+							</tr><tr>
+								<td style="background-color: gray; height: 22px; width: 172px"><a href="javascript:alert1();" title="Enable after View Full Problem click" style="color: #ffffff; font-weight: bold; margin-left: 8px; text-decoration: none; font-size: 12px;">Launch
+										Code Editor</a></td>
+							</tr>
+
+
+
+
+							<tr>
+								<td>
+									<div style="height: 100px; position: relative;"></div>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+</div>
+
+								
+										
+								
+								</td>
+								<td width="23px">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="height: 90px;"></div>
+								</td>
+								<td>
+								
+								<img style=" margin-top:-70px;margin-right:23px;" align="right" border="0" src="./TCS_ CodeVita - Coding ArenaF_files/Mascot-Small.jpg">
+								</td>
+							</tr>								
+						</tbody></table>
+						<div class="lower">
+							<table border="0" style="position:relative;border-collapse:collapse;" align="center" width="932px">
+								<tbody><tr>
+									<td height="20px"></td>
+								</tr>
+								<tr>
+									<td><a class="footer">© 2016 Tata Consultancy Services Limited. All Rights Reserved.&nbsp;&nbsp;&nbsp;</a></td>
+									<td><a class="footer">In Association with</a></td>
+									<td><img border="0" src="./TCS_ CodeVita - Coding ArenaF_files/Campus-Commune-Logo.jpg"></td>
+									<!-- <td ><a class="footer">|</a><a class="footer">&nbsp;Privacy Policy &nbsp;&nbsp;</a></td> -->
+									<td><a class="footer">|</a><a href="https://www.tcscodevita.com/CodevitaV5/privacypolicy.jsp" target="_blank style=" text-decoration:none;="" color:white;"="">&nbsp;Privacy Policy &nbsp;&nbsp;</a></td>
+									<td>
+										<!-- <a href="/CodevitaV5/redirectToTwitter.jsp" target="_blank"><img border="0" src="/CodevitaV5/images/twitter-icn.jpg"></a>
+				<a href="/CodevitaV5/redirectToLinkedIN.jsp" target="_blank"><img border="0" src="/CodevitaV5/images/linked-in-icn.jpg"></a>
+				<a href="/CodevitaV5/redirectToFacebook.jsp" target="_blank"><img border="0" src="/CodevitaV5/images/Facebook-icn.jpg"></a> -->
+				<a href="https://twitter.com/TCS_News" target="_blank"><img border="0" src="./TCS_ CodeVita - Coding ArenaF_files/twitter-icn.jpg"></a>
+				<a href="http://www.linkedin.com/company/tata-consultancy-services/careers?trk=top_nav_careers" target="_blank"><img border="0" src="./TCS_ CodeVita - Coding ArenaF_files/linked-in-icn.jpg"></a>
+				<a href="http://www.facebook.com/TataConsultancyServices" target="_blank"><img border="0" src="./TCS_ CodeVita - Coding ArenaF_files/Facebook-icn.jpg"></a>
+									</td>
+									<td align="right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" src="./TCS_ CodeVita - Coding ArenaF_files/TATA-logo.jpg"></td>
+								</tr>
+							</tbody></table>
+						</div> 
+						<!-- <img style=" margin-top:-230px;margin-right:23px;" align="right" border="0" src="/CodevitaV5/images/Mascot-Small.jpg" > -->
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+		<!--
+		Notification Popup
+		-->
+		<div id="notification_popup_box" class="ui-dialog-content ui-widget-content" style="vertical-align: middle;display:none;">
+			<div style="text-align:right;">
+				<span id="close_icon" onclick="closeNotification()" style="margin-top:-15px;position: absolute;right: 0px;">&nbsp;&nbsp;&nbsp;</span>
+			</div>
+			<div id="notification_popup_text"></div>
+		</div>
+		<input type="hidden" name="selected_problem" value="F">
+		<input type="hidden" id="refreshed" value="yes">
+	
+	<script src="./TCS_ CodeVita - Coding ArenaF_files/gen_validatorv4.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaF_files/ajaxfileupload.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaF_files/jquery-ui.min.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaF_files/reportstartjs.js"></script>
+<!-- <script src="/CodevitaV5/JS/jquery1.10.js"></script> -->
+<script src="./TCS_ CodeVita - Coding ArenaF_files/problemstartjs.js"></script>
+<script src="./TCS_ CodeVita - Coding ArenaF_files/google_analytics.js"> </script>
+
+
+</body></html>
